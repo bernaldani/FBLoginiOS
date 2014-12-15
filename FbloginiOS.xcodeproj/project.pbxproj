@@ -14,6 +14,7 @@
 		33938BDE1A3F32F4004171C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33938BDD1A3F32F4004171C1 /* Images.xcassets */; };
 		33938BE11A3F32F4004171C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33938BDF1A3F32F4004171C1 /* LaunchScreen.xib */; };
 		33938BED1A3F32F5004171C1 /* FbloginiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33938BEC1A3F32F5004171C1 /* FbloginiOSTests.m */; };
+		33938BF91A3F3544004171C1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33938BF81A3F3544004171C1 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		33938BE61A3F32F5004171C1 /* FbloginiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FbloginiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33938BEB1A3F32F5004171C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33938BEC1A3F32F5004171C1 /* FbloginiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FbloginiOSTests.m; sourceTree = "<group>"; };
+		33938BF81A3F3544004171C1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33938BF91A3F3544004171C1 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +69,7 @@
 				33938BCF1A3F32F4004171C1 /* FbloginiOS */,
 				33938BE91A3F32F5004171C1 /* FbloginiOSTests */,
 				33938BCE1A3F32F4004171C1 /* Products */,
+				33938BF81A3F3544004171C1 /* FacebookSDK.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -343,6 +347,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/dani/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = FbloginiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +362,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/dani/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = FbloginiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
